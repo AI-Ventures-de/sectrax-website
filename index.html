@@ -3,636 +3,642 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SECTRAX GmbH: Gleissicherung und Sicherungsposten in Hamm</title>
 <meta name="robots" content="noindex, nofollow">
+<title>SECTRAX GmbH: Gleissicherung und Sicherungsposten in Hamm</title>
 <meta name="description" content="SECTRAX GmbH sichert Gleisbaustellen im Schienennetz mit Sicherungsposten, Sicherungsaufsicht, Bahnübergangsposten und Bahneinsatzleiter. Standort Hamm, Einsatz in NRW und bundesweit.">
 <meta name="theme-color" content="#15171a">
+<meta property="og:title" content="SECTRAX GmbH: Gleissicherung in Hamm">
+<meta property="og:description" content="Sicherungsposten, Sicherungsaufsicht, Bahnübergangsposten und Bahneinsatzleiter für Gleisbaustellen. Aus Hamm, im Einsatz in NRW und bundesweit.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preload" as="image" href="img/hero.jpg" media="(min-width: 768px)">
+<link rel="preload" as="image" href="img/hero-mobile.jpg" media="(max-width: 767px)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2315171a'/%3E%3Cpath d='M7 7 L25 25 M25 7 L7 25' stroke='%23E8B33A' stroke-width='3'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "SECTRAX GmbH",
+  "description": "Sicherungsunternehmen fuer Gleisbaustellen: Sicherungsposten, Sicherungsaufsicht, Bahnuebergangsposten, Bahneinsatzleiter.",
+  "telephone": "+4915226798873",
+  "email": "info@sectrax.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Nassauerstr. 33-35",
+    "postalCode": "59065",
+    "addressLocality": "Hamm",
+    "addressCountry": "DE"
+  },
+  "areaServed": "Nordrhein-Westfalen"
+}
+</script>
 <style>
-  :root{
-    --bg:#15171a;
-    --bg-2:#1b1e22;
-    --panel:#212529;
-    --line:#33383e;
-    --line-soft:#2a2e33;
-    --text:#eceef0;
-    --muted:#a5adb6;
-    --muted-2:#8a9299;
-    --accent:#E8B33A;
-    --accent-ink:#15171a;
-    --r:2px;
-    --maxw:1180px;
-    --pad:clamp(20px,5vw,56px);
-    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  }
-  *,*::before,*::after{box-sizing:border-box}
-  html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
-  body{
-    margin:0;background:var(--bg);color:var(--text);
-    font-family:var(--sans);font-size:17px;line-height:1.6;
-    font-weight:400;letter-spacing:.002em;
-    -webkit-font-smoothing:antialiased;
-  }
-  img,svg{display:block;max-width:100%}
-  a{color:inherit}
-  h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.021em;line-height:1.06;text-wrap:balance}
-  h1{font-size:clamp(1.9rem,3.8vw,3.5rem)}
-  h2{font-size:clamp(1.75rem,3.6vw,2.75rem);letter-spacing:-.025em}
-  h3{font-size:1.18rem;line-height:1.3;letter-spacing:-.012em}
-  p{margin:0}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
-  .muted{color:var(--muted)}
-  .skip{
-    position:absolute;left:16px;top:-60px;z-index:100;
-    background:var(--accent);color:var(--accent-ink);padding:10px 18px;
-    border-radius:var(--r);font-weight:700;text-decoration:none;
-  }
-  .skip:focus{top:12px}
-  :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+:root{
+  --bg:#15171a; --bg-2:#1b1e22; --bg-3:#22262b;
+  --line:rgba(255,255,255,.10); --line-soft:rgba(255,255,255,.06);
+  --text:#eef0f2; --muted:#a2a8b0; --muted-2:#8b9199;
+  --accent:#E8B33A; --accent-dim:#c2942c;
+  --radius:3px; --wrap:1240px; --pad:clamp(20px,5vw,48px);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;line-height:1.06;letter-spacing:-.02em;font-weight:800}
+h1{font-size:clamp(2rem,7vw,4.5rem)}
+h2{font-size:clamp(1.55rem,4.3vw,2.8rem);line-height:1.09}
+h3{font-size:1.05rem;line-height:1.28;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:14px}
+.mark{width:34px;height:34px;flex:0 0 auto}
+.mark path{stroke:var(--accent);stroke-width:3;fill:none}
 
-  /* ---------- NAV ---------- */
-  .nav{
-    position:sticky;top:0;z-index:50;background:rgba(21,23,26,.94);
-    border-bottom:1px solid var(--line-soft);
-    backdrop-filter:blur(8px);
-  }
-  .nav-in{
-    max-width:var(--maxw);margin:0 auto;padding:0 var(--pad);
-    height:76px;display:flex;align-items:center;gap:32px;
-  }
-  .brand{
-    display:flex;align-items:center;gap:10px;text-decoration:none;
-    font-weight:800;letter-spacing:.16em;font-size:1.02rem;white-space:nowrap;
-  }
-  .brand svg{width:26px;height:26px;flex:none}
-  .nav-links{display:flex;gap:28px;margin-left:auto;align-items:center}
-  .nav-links a{
-    text-decoration:none;color:var(--muted);font-size:.94rem;font-weight:500;
-    padding:6px 0;white-space:nowrap;transition:color .15s ease;
-  }
-  .nav-links a:hover{color:var(--text)}
-  .nav-cta{margin-left:8px}
+.nav{position:fixed;inset:0 0 auto 0;z-index:100;height:66px;display:flex;align-items:center;
+  background:rgba(21,23,26,.74);backdrop-filter:blur(14px) saturate(140%);
+  -webkit-backdrop-filter:blur(14px) saturate(140%);
+  border-bottom:1px solid var(--line-soft);transition:background .3s var(--ease),border-color .3s var(--ease)}
+.nav.scrolled{background:rgba(21,23,26,.95);border-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.13em;font-size:.95rem}
+.nav-links{display:none;align-items:center;gap:30px}
+.nav-links a{font-size:.9rem;color:var(--muted);transition:color .2s}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--text)}
+@media (min-width:880px){.nav{height:76px}.nav-links{display:flex}}
 
-  /* ---------- BUTTONS ---------- */
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:10px;
-    font:inherit;font-weight:700;font-size:.97rem;letter-spacing:.005em;
-    padding:14px 26px;border-radius:var(--r);border:1px solid transparent;
-    text-decoration:none;white-space:nowrap;cursor:pointer;
-    transition:background-color .15s ease,border-color .15s ease,color .15s ease;
-  }
-  .btn-primary{background:var(--accent);color:var(--accent-ink)}
-  .btn-primary:hover{background:#f0c254}
-  .btn-ghost{background:transparent;color:var(--text);border-color:#4a5057}
-  .btn-ghost:hover{border-color:var(--muted);background:rgba(255,255,255,.04)}
-  .btn-sm{padding:11px 20px;font-size:.92rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;border-radius:var(--radius);
+  font-size:.95rem;font-weight:700;letter-spacing:.01em;border:1px solid transparent;cursor:pointer;
+  transition:transform .18s var(--ease),background .2s,border-color .2s,color .2s;will-change:transform}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-primary{background:var(--accent);color:#15171a}
+.btn-primary:hover{background:#f0c04f}
+.btn-ghost{border-color:rgba(255,255,255,.24);color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{padding:11px 18px;font-size:.86rem}
+.btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.2;flex:0 0 auto}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
-  /* ---------- HERO ---------- */
-  .hero{border-bottom:1px solid var(--line-soft);overflow:hidden}
-  .hero-in{
-    max-width:var(--maxw);margin:0 auto;padding:clamp(40px,5vw,72px) var(--pad) clamp(48px,5vw,76px);
-    display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
-    gap:clamp(32px,5vw,72px);align-items:center;
-  }
-  .hero h1{max-width:none;white-space:nowrap}
-  .hero h1 .sp{display:inline-block;width:.28em}
-  .hero h1 .hl{color:var(--accent);display:block}
-  .hero-sub{margin-top:22px;font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--muted);max-width:36ch;line-height:1.55}
-  .hero-cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
-  .hero-art{position:relative;min-height:340px;align-self:stretch}
-  .hero-art svg{width:100%;height:100%;min-height:340px}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;
+  padding:96px 0 0;overflow:hidden;background:#0d0f11}
+.hero-media{position:absolute;inset:-12% 0;z-index:0;will-change:transform}
+.hero-media picture{display:block;width:100%;height:100%}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 44%}
+.hero-scrim{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(13,15,17,.95) 0%,rgba(13,15,17,.72) 36%,rgba(13,15,17,.26) 66%,rgba(13,15,17,.48) 100%),
+             linear-gradient(to right,rgba(13,15,17,.88) 0%,rgba(13,15,17,.28) 56%,rgba(13,15,17,0) 86%)}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad) clamp(38px,7vw,78px)}
+.hero h1{max-width:19ch;font-size:clamp(2rem,8.6vw,4.5rem)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{margin-top:20px;max-width:44ch;font-size:clamp(1rem,2.5vw,1.15rem);color:#d3d7db;line-height:1.56}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-call{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:clamp(1.05rem,3.2vw,1.34rem);letter-spacing:.005em;color:var(--text);margin-top:26px;transition:color .2s}
+.hero-call svg{width:21px;height:21px;stroke:var(--accent);fill:none;stroke-width:2.2;flex:0 0 auto}
+.hero-call:hover{color:var(--accent)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.tag{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#c9ced3;
+  padding:7px 12px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.035)}
+.hero-edge{position:absolute;left:0;right:0;bottom:0;height:1px;z-index:3;
+  background:linear-gradient(to right,transparent,rgba(232,179,58,.55),transparent)}
+@media (min-width:768px){.hero{align-items:center;padding:120px 0 90px}.hero-inner{padding-bottom:0}.hero h1 em{display:block}}
 
-  /* ---------- SECTION BASE ---------- */
-  section{padding:clamp(64px,8vw,104px) 0}
-  .sec-head{max-width:720px;margin-bottom:clamp(36px,4vw,52px)}
-  .sec-head p{margin-top:16px;color:var(--muted);font-size:1.04rem;max-width:60ch}
-  .eyebrow{
-    font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--accent);margin-bottom:14px;
-  }
+section{position:relative}
+.sec{padding:clamp(62px,10vw,120px) 0}
+.sec-tight{padding:clamp(52px,8vw,92px) 0}
+.sec-head{max-width:64ch;margin-bottom:clamp(30px,5vw,52px)}
+.sec-head p{margin-top:16px;color:var(--muted);max-width:52ch}
 
-  /* ---------- LEISTUNGEN ---------- */
-  .services{border-bottom:1px solid var(--line-soft)}
-  .svc-list{border-top:1px solid var(--line)}
-  .svc{
-    display:grid;grid-template-columns:190px minmax(0,1fr) minmax(0,1.15fr);
-    gap:clamp(20px,3vw,44px);align-items:start;
-    padding:34px 0;border-bottom:1px solid var(--line);
-  }
-  .svc-key{display:flex;flex-direction:column;gap:4px}
-  .svc-abbr{
-    font-size:clamp(2.2rem,3.6vw,2.9rem);font-weight:800;line-height:1;
-    letter-spacing:-.03em;color:var(--accent);
-  }
-  .svc-name{font-size:.98rem;font-weight:700;line-height:1.3;letter-spacing:0}
-  .svc p{color:var(--muted);max-width:54ch;font-size:1rem}
-  .svc-note{
-    margin-top:clamp(28px,3vw,40px);color:var(--muted-2);font-size:.92rem;max-width:70ch;
-  }
+.svc-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.svc{display:grid;gap:8px;grid-template-columns:1fr;padding:26px 0;border-bottom:1px solid var(--line);transition:background .25s var(--ease)}
+.svc:hover{background:rgba(255,255,255,.022)}
+.svc-key{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.svc-abbr{font-size:clamp(1.5rem,5.4vw,2.1rem);font-weight:800;letter-spacing:-.02em;color:var(--accent);line-height:1}
+.svc-name{font-size:1.02rem;font-weight:700}
+.svc p{color:var(--muted);font-size:.96rem}
+.svc .muted{color:var(--muted-2);font-size:.88rem}
+.svc-note{margin-top:26px;color:var(--muted-2);font-size:.87rem;max-width:66ch}
+@media (min-width:820px){
+  .svc{grid-template-columns:minmax(0,.92fr) minmax(0,1.5fr);gap:34px;padding:34px 20px 34px 0}
+  .svc-key{flex-direction:column;gap:6px;align-items:flex-start}
+  .svc:nth-child(odd){padding-left:20px}
+}
 
-  /* ---------- AUFTRAGGEBER ---------- */
-  .client{border-bottom:1px solid var(--line-soft)}
-  .client-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,6vw,80px)}
-  .client-intro p{margin-top:18px;color:var(--muted);max-width:44ch}
-  .points{display:grid;grid-template-columns:1fr 1fr;gap:0 36px;border-top:1px solid var(--line)}
-  .point{padding:22px 0;border-bottom:1px solid var(--line)}
-  .point h3{font-size:1.02rem;margin-bottom:7px}
-  .point p{color:var(--muted);font-size:.95rem;line-height:1.55}
+.band{position:relative;min-height:clamp(340px,56vh,560px);display:flex;align-items:center;overflow:hidden;background:#0d0f11}
+.band-media{position:absolute;inset:-14% 0;z-index:0;will-change:transform}
+.band-media img{width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to right,rgba(13,15,17,.94) 0%,rgba(13,15,17,.74) 48%,rgba(13,15,17,.32) 100%)}
+.band-inner{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:clamp(46px,8vw,72px) var(--pad)}
+.band h2{max-width:20ch}
+.band p{margin-top:16px;color:#c6cbd0;max-width:46ch}
 
-  /* ---------- KARRIERE ---------- */
-  .career{background:var(--bg-2);border-bottom:1px solid var(--line-soft)}
-  .career-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(36px,6vw,80px);align-items:start}
-  .career-intro p{margin-top:18px;color:var(--muted);max-width:48ch}
-  .career-intro .btn{margin-top:30px}
-  .jobs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
-  .job{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-  .job span{font-size:1.02rem;font-weight:600}
-  .job em{font-style:normal;font-size:.84rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;font-weight:700;white-space:nowrap}
-  .career-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);margin-top:clamp(44px,5vw,64px)}
-  .career-cols h3{margin-bottom:16px;font-size:1.05rem}
-  ul.clean{list-style:none;margin:0;padding:0}
-  ul.clean li{padding:11px 0;border-bottom:1px solid var(--line-soft);color:var(--muted);font-size:.98rem}
-  ul.clean li:last-child{border-bottom:0}
-  ul.clean li strong{color:var(--text);font-weight:600}
+.points{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.point{background:var(--bg);padding:26px 22px;transition:background .25s}
+.point:hover{background:var(--bg-2)}
+.point h3{margin-bottom:9px}
+.point p{color:var(--muted);font-size:.94rem}
+@media (min-width:700px){.points{grid-template-columns:1fr 1fr}}
 
-  /* ---------- KONTAKT ---------- */
-  .contact-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,6vw,80px)}
-  .contact-info p{margin-top:16px;color:var(--muted);max-width:38ch}
-  .contact-block{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
-  .contact-block dt{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:6px}
-  .contact-block dd{margin:0 0 22px;font-size:1.02rem;line-height:1.5}
-  .contact-block dd:last-child{margin-bottom:0}
-  .contact-block a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
-  .contact-block a:hover{border-color:var(--accent)}
+.jobs{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.job{background:var(--bg-2);padding:22px 20px;display:flex;flex-direction:column;gap:8px;transition:background .25s}
+.job:hover{background:var(--bg-3)}
+.job-lvl{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.job-name{font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
+.job-note{color:var(--muted-2);font-size:.86rem}
+@media (min-width:700px){.jobs{grid-template-columns:repeat(3,1fr)}}
+.lists{display:grid;gap:30px;margin-top:36px}
+@media (min-width:700px){.lists{grid-template-columns:1fr 1fr;gap:44px}}
+.list-h{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:14px}
+ul.check{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+ul.check li{position:relative;padding-left:26px;color:#c6cbd0;font-size:.95rem}
+ul.check li::before{content:"";position:absolute;left:0;top:.56em;width:11px;height:2px;background:var(--accent)}
 
-  .form-note{
-    display:flex;gap:12px;align-items:flex-start;
-    border:1px solid #5a4a22;background:#241f14;color:#e6d4a8;
-    padding:12px 16px;border-radius:var(--r);font-size:.88rem;line-height:1.45;margin-bottom:26px;
-  }
-  .form-note strong{color:var(--accent);font-weight:700}
-  form{display:grid;gap:18px}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .field{display:flex;flex-direction:column;gap:7px}
-  .field label{font-size:.86rem;font-weight:600;letter-spacing:.02em}
-  .field label .opt{color:var(--muted-2);font-weight:400}
-  input,textarea{
-    font:inherit;font-size:1rem;color:var(--text);
-    background:var(--panel);border:1px solid #3d434a;border-radius:var(--r);
-    padding:12px 14px;width:100%;transition:border-color .15s ease;
-  }
-  input:hover,textarea:hover{border-color:#535a62}
-  input:focus,textarea:focus{border-color:var(--accent);outline:2px solid var(--accent);outline-offset:1px}
-  textarea{resize:vertical;min-height:140px}
-  .field-check{margin-top:-2px}
-  .check-label{
-    flex-direction:row;display:flex;align-items:flex-start;gap:10px;
-    font-size:.88rem;font-weight:400;color:var(--muted);line-height:1.5;cursor:pointer;
-  }
-  .check-label input[type="checkbox"]{
-    width:20px;height:20px;margin:0;flex:none;accent-color:var(--accent);
-    padding:0;background:none;border:0;
-  }
-  .check-label span{padding-top:1px}
-  .check-label a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
-  .check-label a:hover{color:var(--text)}
-  form .btn{justify-self:start;margin-top:4px}
-  .honeypot{position:absolute;left:-9999px}
-  .form-status{margin-top:6px;font-size:.92rem;color:var(--accent);line-height:1.5;max-width:58ch}
+.contact{display:grid;gap:clamp(30px,5vw,60px)}
+@media (min-width:900px){.contact{grid-template-columns:1fr 1.05fr;gap:72px}}
+.contact-info>p:not(.eyebrow){color:var(--muted);margin-top:14px;max-width:40ch}
+.address{margin-top:28px;display:grid;gap:18px}
+.addr-h{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:6px}
+.addr-v{font-size:1rem;line-height:1.5}
+.addr-v a{border-bottom:1px solid rgba(232,179,58,.34);transition:border-color .2s,color .2s}
+.addr-v a:hover{color:var(--accent);border-color:var(--accent)}
+form{display:grid;gap:16px;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3.5vw,32px)}
+.field{display:grid;gap:7px}
+label{font-size:.82rem;font-weight:600;color:#c6cbd0}
+.req{color:var(--accent)}
+input,textarea{font:inherit;font-size:.96rem;color:var(--text);background:#141618;border:1px solid rgba(255,255,255,.14);
+  border-radius:var(--radius);padding:12px 13px;width:100%;transition:border-color .2s,background .2s}
+input:hover,textarea:hover{border-color:rgba(255,255,255,.24)}
+input:focus,textarea:focus{outline:none;border-color:var(--accent);background:#171a1d}
+input::placeholder,textarea::placeholder{color:#767c84}
+textarea{resize:vertical;min-height:118px}
+.row2{display:grid;gap:16px}
+@media (min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:.85rem;color:var(--muted);line-height:1.5;font-weight:400}
+.consent input{width:17px;height:17px;flex:0 0 auto;margin-top:3px;accent-color:var(--accent)}
+.consent a{color:var(--accent);border-bottom:1px solid rgba(232,179,58,.3)}
+.form-status{font-size:.88rem;color:var(--accent);min-height:1.2em;line-height:1.5}
+.form-note{font-size:.82rem;color:var(--muted-2);line-height:1.55;border-left:2px solid var(--accent-dim);padding-left:12px}
 
-  /* ---------- FOOTER / LEGAL ---------- */
-  footer{border-top:1px solid var(--line);padding:clamp(52px,6vw,72px) 0 44px;background:var(--bg)}
-  .foot-top{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line-soft)}
-  .foot-brand{font-weight:800;letter-spacing:.16em;font-size:1rem;margin-bottom:14px}
-  .foot-top address{font-style:normal;color:var(--muted);line-height:1.7;font-size:.95rem}
-  .foot-top address a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line)}
-  .foot-links{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
-  .foot-links a{color:var(--muted);text-decoration:none;font-size:.92rem}
-  .foot-links a:hover{color:var(--accent)}
-  .foot-bottom{padding-top:26px;color:var(--muted-2);font-size:.84rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:clamp(42px,7vw,66px) 0 26px;background:#111315}
+.foot-grid{display:grid;gap:30px}
+@media (min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr;gap:44px}}
+.foot-brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.13em;font-size:.95rem;margin-bottom:14px}
+.foot-p{color:var(--muted-2);font-size:.9rem;line-height:1.65;max-width:34ch}
+.foot-h{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:14px}
+.foot-links{display:grid;gap:9px}
+.foot-links a{color:var(--muted);font-size:.9rem;transition:color .2s}
+.foot-links a:hover{color:var(--accent)}
+.foot-bottom{margin-top:42px;padding-top:20px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:10px;
+  justify-content:space-between;font-size:.82rem;color:#71777e}
 
-  .legal{border-top:1px solid var(--line-soft);padding:clamp(48px,6vw,72px) 0 0}
-  .legal h2{font-size:clamp(1.35rem,2.4vw,1.7rem)}
-  .legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);margin-top:28px}
-  .legal p{color:var(--muted);font-size:.94rem;line-height:1.7;margin-bottom:10px;max-width:70ch}
-  .legal .ph{white-space:nowrap;color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em;letter-spacing:.01em}
-  .ph-note{
-    margin:24px 0 0;padding:12px 16px;border:1px solid #5a4a22;background:#241f14;color:#e6d4a8;
-    border-radius:var(--r);font-size:.88rem;line-height:1.5;max-width:76ch;
-  }
-  .ph-note strong{color:var(--accent)}
-  .form-note a{color:inherit;text-decoration:underline}
-  .legal h3{font-size:.95rem;margin:20px 0 8px;letter-spacing:.01em}
-  .legal h3:first-child{margin-top:0}
+.legal{border-top:1px solid var(--line-soft);background:#111315;padding:clamp(46px,7vw,74px) 0}
+.legal h2{font-size:clamp(1.28rem,3vw,1.6rem)}
+.legal-grid{display:grid;gap:clamp(26px,4vw,50px);margin-top:26px}
+@media (min-width:760px){.legal-grid{grid-template-columns:1fr 1fr}}
+.legal h3{font-size:.94rem;margin:22px 0 7px;color:#d3d7db}
+.legal h3:first-child{margin-top:0}
+.legal p{color:var(--muted);font-size:.92rem;line-height:1.7;margin-bottom:9px;max-width:70ch}
+.ph{color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;white-space:nowrap}
+.draft-note{margin-top:26px;padding:14px 16px;border:1px solid rgba(232,179,58,.28);border-radius:var(--radius);
+  background:rgba(232,179,58,.05);color:#d8c48a;font-size:.87rem;line-height:1.6}
 
-  /* ---------- RESPONSIVE ---------- */
-  @media (max-width:960px){
-    .svc{grid-template-columns:150px minmax(0,1fr);gap:18px 28px}
-    .svc p{grid-column:2}
-    .client-grid,.career-top,.contact-grid{grid-template-columns:minmax(0,1fr)}
-    .contact-grid{gap:8px}
-    .legal-grid{grid-template-columns:minmax(0,1fr)}
-  }
-  @media (max-width:768px){
-    .nav-in{height:66px;gap:16px}
-    .nav-links{display:none}
-    .nav-cta{margin-left:auto}
-    .hero-in{grid-template-columns:minmax(0,1fr);padding-top:clamp(36px,7vw,56px)}
-    .hero h1{max-width:100%;line-height:1.1;white-space:normal;font-size:clamp(1.5rem,6.9vw,2.2rem);letter-spacing:-.02em}
-    .hero h1 br{display:none}
-    .hero h1 .hl{display:inline;color:var(--text)}
-    .hero h1 .sp{display:inline;width:auto}
-    .brand{font-size:.92rem;letter-spacing:.13em}
-    .brand svg{width:22px;height:22px}
-    .nav-cta{padding:10px 14px;font-size:.85rem}
-    .hero-art{min-height:0;order:2;margin-top:8px}
-    .hero-art svg{height:auto;min-height:0;aspect-ratio:16/10}
-    .svc{grid-template-columns:minmax(0,1fr);padding:26px 0;gap:10px}
-    .svc p{grid-column:1}
-    .svc-key{flex-direction:row;align-items:baseline;gap:12px;flex-wrap:wrap}
-    .points{grid-template-columns:minmax(0,1fr);gap:0}
-    .career-cols{grid-template-columns:minmax(0,1fr);gap:32px}
-    .row{grid-template-columns:minmax(0,1fr)}
-    .foot-top{grid-template-columns:minmax(0,1fr)}
-    .job{flex-direction:column;gap:6px;align-items:flex-start}
-    .svc-abbr{font-size:2rem}
-  }
-  @media (prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto}
-    *{transition:none !important;animation:none !important}
-  }
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .72s var(--ease),transform .72s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero-media,.band-media{transform:none!important}
+}
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Zum Inhalt springen</a>
 
-<header class="nav">
+<header class="nav" id="nav">
   <div class="nav-in">
     <a class="brand" href="#top" aria-label="SECTRAX Startseite">
-      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <rect x="1" y="1" width="30" height="30" rx="2" fill="none" stroke="#E8B33A" stroke-width="2"/>
-        <path d="M8 24 L24 8" stroke="#E8B33A" stroke-width="2"/>
-        <path d="M8 8 L24 24" stroke="#eceef0" stroke-width="2"/>
-        <path d="M13 21.5 L23 11.5" stroke="#E8B33A" stroke-width="1.4"/>
-      </svg>
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 7 L25 25 M25 7 L7 25"/></svg>
       SECTRAX
     </a>
     <nav class="nav-links" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
       <a href="#auftraggeber">Für Auftraggeber</a>
       <a href="#karriere">Karriere</a>
-      <a href="#kontakt">Kontakt</a>
     </nav>
-    <a class="btn btn-primary btn-sm nav-cta" href="#kontakt">Kontakt</a>
+    <a class="btn btn-primary btn-sm" href="#kontakt">Kontakt</a>
   </div>
 </header>
 
-<main id="main">
+<main id="top">
 
-  <!-- HERO -->
-  <div class="hero" id="top">
-    <div class="hero-in">
-      <div>
-        <h1>Gleisbaustellen<span class="sp"> </span><br><span class="hl">sicher abgesichert.</span></h1>
-        <p class="hero-sub">Sicherungsposten, Aufsicht und Einsatzleitung aus einer Hand. Aus Hamm, im Einsatz in NRW und bundesweit.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#kontakt">Kontakt</a>
-        </div>
+  <section class="hero" id="hero">
+    <div class="hero-media" id="heroMedia">
+      <picture>
+        <source media="(max-width:767px)" srcset="img/hero-mobile.jpg">
+        <img src="img/hero.jpg" alt="Gleisbaustelle mit Oberleitungsmasten und neu verlegtem Gleis" width="1920" height="1080" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <h1>Gleisbaustellen<em>sicher abgesichert.</em></h1>
+      <p class="hero-sub">Sicherungsposten, Aufsicht und Einsatzleitung aus einer Hand. Aus Hamm, im Einsatz in NRW und bundesweit.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#kontakt">Kontakt
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="tel:+4915226798873">Anrufen</a>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" role="presentation">
-          <defs>
-            <linearGradient id="gl" x1="0" y1="0" x2=".7" y2="1">
-              <stop offset="0" stop-color="#23272c"/>
-              <stop offset="1" stop-color="#171a1e"/>
-            </linearGradient>
-            <linearGradient id="fade" x1="0" y1="1" x2="1" y2="0">
-              <stop offset="0" stop-color="#E8B33A" stop-opacity=".25"/>
-              <stop offset=".55" stop-color="#E8B33A" stop-opacity=".95"/>
-              <stop offset="1" stop-color="#E8B33A" stop-opacity="1"/>
-            </linearGradient>
-            <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-              <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#31363c" stroke-width="1"/>
-            </pattern>
-            <clipPath id="clip"><rect x="0" y="0" width="600" height="460" rx="2"/></clipPath>
-          </defs>
-          <g clip-path="url(#clip)">
-            <rect width="600" height="460" fill="url(#gl)"/>
-            <rect width="600" height="460" fill="url(#grid)" opacity=".55"/>
-
-            <!-- sleepers in perspective, they shrink toward the vanishing point -->
-            <g stroke="#3a4047" stroke-width="4" stroke-linecap="butt">
-              <line x1="46" y1="460" x2="258" y2="330"/>
-              <line x1="112" y1="460" x2="286" y2="330"/>
-              <line x1="176" y1="460" x2="314" y2="330"/>
-              <line x1="238" y1="460" x2="342" y2="330"/>
-              <line x1="298" y1="460" x2="370" y2="330"/>
-              <line x1="356" y1="460" x2="398" y2="330"/>
-              <line x1="412" y1="460" x2="426" y2="330"/>
-              <line x1="466" y1="460" x2="454" y2="330"/>
-              <line x1="518" y1="460" x2="482" y2="330"/>
-            </g>
-            <g stroke="#343a41" stroke-width="3">
-              <line x1="284" y1="314" x2="392" y2="314"/>
-              <line x1="300" y1="300" x2="386" y2="300"/>
-              <line x1="312" y1="288" x2="382" y2="288"/>
-              <line x1="322" y1="278" x2="378" y2="278"/>
-            </g>
-
-            <!-- two rails, bright edge on top -->
-            <g fill="none" stroke-linecap="square">
-              <path d="M 150 460 L 300 330 L 334 302" stroke="#5b626a" stroke-width="9"/>
-              <path d="M 330 460 L 370 330 L 344 302" stroke="#5b626a" stroke-width="9"/>
-              <path d="M 150 460 L 300 330 L 334 302" stroke="#9aa2aa" stroke-width="2"/>
-              <path d="M 330 460 L 370 330 L 344 302" stroke="#9aa2aa" stroke-width="2"/>
-            </g>
-
-            <!-- work zone marker: accent band across the track -->
-            <g>
-              <path d="M 286 336 L 384 336 L 378 352 L 292 352 Z" fill="#E8B33A" opacity=".92"/>
-              <circle cx="339" cy="302" r="9" fill="none" stroke="#E8B33A" stroke-width="2.5"/>
-              <circle cx="339" cy="302" r="3.2" fill="#E8B33A"/>
-            </g>
-
-            <!-- accent route from the lower left into the work zone -->
-            <path d="M -10 414 L 196 414 L 300 330" fill="none" stroke="url(#fade)" stroke-width="2.5"/>
-            <circle cx="196" cy="414" r="4.5" fill="#E8B33A"/>
-
-            <!-- guide lines -->
-            <g stroke="#3b4148" stroke-width="1">
-              <line x1="0" y1="330" x2="600" y2="330"/>
-            </g>
-            <g stroke="#3b4148" stroke-width="1" stroke-dasharray="2 7">
-              <line x1="0" y1="96" x2="600" y2="96"/>
-              <line x1="0" y1="196" x2="600" y2="196"/>
-            </g>
-            <!-- caption ticks on the right, purely graphic -->
-            <g stroke="#4a5158" stroke-width="1.5">
-              <line x1="556" y1="96" x2="600" y2="96"/>
-              <line x1="576" y1="196" x2="600" y2="196"/>
-              <line x1="566" y1="330" x2="600" y2="330"/>
-            </g>
-          </g>
-        </svg>
+      <a class="hero-call" href="tel:+4915226798873">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+        +49 1522 6798873
+      </a>
+      <div class="hero-tags">
+        <span class="tag">SiPo</span>
+        <span class="tag">Sakra</span>
+        <span class="tag">BüP</span>
+        <span class="tag">BaE</span>
       </div>
     </div>
-  </div>
+    <div class="hero-edge" aria-hidden="true"></div>
+  </section>
 
-  <!-- LEISTUNGEN -->
-  <section class="services" id="leistungen">
+  <section class="sec" id="leistungen">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <p class="eyebrow">Leistungen</p>
         <h2>Vier Funktionen, ein Sicherungskonzept.</h2>
         <p>Jede Baustelle am Gleis braucht eine klare Aufgabenteilung. Wir besetzen die Posten, die Ihr Bauvorhaben und die Betriebsabläufe erfordern.</p>
       </div>
 
       <div class="svc-list">
-        <article class="svc">
+        <article class="svc reveal">
           <div class="svc-key">
             <span class="svc-abbr">SiPo</span>
             <span class="svc-name">Sicherungsposten</span>
           </div>
-          <p>Der Sicherungsposten beobachtet den Gleisbereich und warnt das Arbeitskollektiv rechtzeitig vor herannahenden Fahrzeugen. Er sichert den Arbeits- und Rettungsraum ab, solange unter Sperrung oder mit betrieblichen Einschränkungen gearbeitet wird.</p>
-          <p class="muted">Einsatz nach den Vorgaben der örtlichen Regelung und in Abstimmung mit der Bauleitung.</p>
+          <div>
+            <p>Der Sicherungsposten beobachtet den Gleisbereich und warnt die Arbeitsgruppe rechtzeitig vor herannahenden Fahrzeugen. Er entscheidet, wann die Arbeit ruht und wann sie weitergehen kann.</p>
+            <p class="muted">Grundlage jeder Baustelle im Gleis, unabhängig von der Größe des Vorhabens.</p>
+          </div>
         </article>
 
-        <article class="svc">
+        <article class="svc reveal">
           <div class="svc-key">
             <span class="svc-abbr">Sakra</span>
             <span class="svc-name">Sicherungsaufsichtskraft</span>
           </div>
-          <p>Die Sicherungsaufsichtskraft koordiniert mehrere Sicherungsposten und führt die Sicherungsmaßnahmen am Einsatzort zusammen. Sie ist die Ansprechperson an der Baustelle und meldet Abweichungen direkt an Bauleitung und Betrieb.</p>
-          <p class="muted">Sinnvoll bei größeren Baustellen und mehreren parallelen Arbeitsstellen.</p>
+          <div>
+            <p>Die Sicherungsaufsichtskraft führt mehrere Sicherungsposten und koordiniert sie untereinander. Sie ist die Verbindung zwischen Baustelle, Betrieb und den eingesetzten Kräften.</p>
+            <p class="muted">Sinnvoll bei größeren Baustellen und mehreren parallelen Arbeitsstellen.</p>
+          </div>
         </article>
 
-        <article class="svc">
+        <article class="svc reveal">
           <div class="svc-key">
             <span class="svc-abbr">BüP</span>
             <span class="svc-name">Bahnübergangsposten</span>
           </div>
-          <p>Der Bahnübergangsposten regelt den Verkehr an Bahnübergängen, solange die technische Sicherung eingeschränkt oder außer Betrieb ist. Er steuert die Räumung des Übergangs und gibt die Strecke für den Zugverkehr frei.</p>
-          <p class="muted">Typischer Einsatz bei Bauarbeiten oder Störungen an Schranken und Lichtzeichen.</p>
+          <div>
+            <p>Der Bahnübergangsposten regelt den Verkehr an Bahnübergängen, solange die technische Sicherung eingeschränkt oder außer Betrieb ist. Er steuert die Räumung des Übergangs und gibt die Strecke für den Zugverkehr frei.</p>
+            <p class="muted">Typischer Einsatz bei Bauarbeiten oder Störungen an Schranken und Lichtzeichen.</p>
+          </div>
         </article>
 
-        <article class="svc">
+        <article class="svc reveal">
           <div class="svc-key">
             <span class="svc-abbr">BaE</span>
             <span class="svc-name">Bahneinsatzleiter</span>
           </div>
-          <p>Der Bahneinsatzleiter verantwortet die betriebliche Abwicklung des Einsatzes auf der Strecke. Er stimmt die Arbeiten mit der zuständigen Stelle ab, ordnet Sperrungen an und sorgt dafür, dass der Betrieb sicher wieder aufgenommen wird.</p>
-          <p class="muted">Für Einsätze mit hoher betrieblicher Tragweite oder mehreren Gewerken.</p>
+          <div>
+            <p>Der Bahneinsatzleiter verantwortet die betriebliche Abwicklung des Einsatzes auf der Strecke. Er stimmt die Arbeiten mit der zuständigen Stelle ab, ordnet Sperrungen an und sorgt dafür, dass der Betrieb sicher wieder aufgenommen wird.</p>
+            <p class="muted">Für Einsätze mit hoher betrieblicher Tragweite oder mehreren Gewerken.</p>
+          </div>
         </article>
       </div>
 
-      <p class="svc-note">Kürzel und Aufgaben sind fachlich eingeordnet. Der konkrete Umfang ergibt sich aus der örtlichen Regelung Ihres Bauvorhabens.</p>
+      <p class="svc-note reveal">Kürzel und Aufgaben sind fachlich eingeordnet. Der konkrete Umfang ergibt sich aus der örtlichen Regelung Ihres Bauvorhabens.</p>
     </div>
   </section>
 
-  <!-- AUFTRAGGEBER -->
-  <section class="client" id="auftraggeber">
-    <div class="wrap client-grid">
-      <div class="client-intro">
+  <section class="band">
+    <div class="band-media" id="bandMedia">
+      <img src="img/detail-strecke.jpg" alt="Bahnstrecke mit Schotterbett und Oberleitungsanlage" loading="lazy" width="1200" height="800">
+    </div>
+    <div class="band-inner">
+      <h2 class="reveal">Personal, das die Strecke kennt.</h2>
+      <p class="reveal">Wir besetzen Posten mit eigenen Kräften. Wer bei uns eingesetzt wird, ist auf die Abläufe im Gleisbereich eingewiesen.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="auftraggeber">
+    <div class="wrap">
+      <div class="sec-head reveal">
         <p class="eyebrow">Für Auftraggeber</p>
         <h2>Was Sie bei der Zusammenarbeit erwarten können.</h2>
         <p>Jeder Einsatz beginnt mit einer klaren Abstimmung: welche Posten, für welchen Zeitraum, mit welcher Übergabe an Ihre Bauleitung.</p>
       </div>
+
       <div class="points">
-        <div class="point">
+        <div class="point reveal">
           <h3>Kurze Wege</h3>
           <p>Standort Hamm, erreichbar für Baustellen in NRW und angrenzenden Regionen. Anfrage, Rückmeldung und Einsatzplanung laufen über einen festen Kontakt.</p>
         </div>
-        <div class="point">
-          <h3>Abstimmung mit der Bauleitung</h3>
-          <p>Wir stimmen Postenstellung, Zeiten und Übergaben mit Ihrer Bauleitung ab, damit die Sicherung zum Bauablauf passt und nicht umgekehrt.</p>
+        <div class="point reveal">
+          <h3>Abstimmung mit den zuständigen Stellen</h3>
+          <p>Die Besetzung wird mit den betrieblichen Vorgaben abgeglichen, bevor die Kräfte an die Strecke gehen.</p>
         </div>
-        <div class="point">
+        <div class="point reveal">
           <h3>Klare Personalplanung</h3>
-          <p>Wir nennen Ihnen vorab, welche Posten wir für Ihren Zeitraum besetzen können. Wenn ein Zeitraum nicht machbar ist, sagen wir das früh und offen.</p>
+          <p>Sie erfahren früh, welche Posten zu welcher Zeit besetzt sind, und können Ihre Bauabläufe darauf einrichten.</p>
         </div>
-        <div class="point">
+        <div class="point reveal">
           <h3>Nachvollziehbare Dokumentation</h3>
-          <p>Für jeden Einsatz dokumentieren wir Besetzung, Zeiten und Vorkommnisse, damit Sie eine belastbare Grundlage für Ihre Nachweise haben.</p>
+          <p>Besetzung und Einsatzzeiten werden festgehalten, damit Abrechnung und Nachweis zusammenpassen.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- KARRIERE -->
-  <section class="career" id="karriere">
+  <section class="sec" id="karriere">
     <div class="wrap">
-      <div class="career-top">
-        <div class="career-intro">
-          <p class="eyebrow">Karriere</p>
-          <h2>Arbeit am Gleis. Mit Plan dahinter.</h2>
-          <p>Wir wachsen und suchen Kolleginnen und Kollegen, die Verantwortung am Gleis übernehmen wollen. Einsteiger ohne Vorerfahrung planen wir fest in die Einarbeitung ein.</p>
-          <a class="btn btn-primary" href="mailto:info@sectrax.de?subject=Bewerbung">Jetzt bewerben</a>
+      <div class="sec-head reveal">
+        <p class="eyebrow">Karriere</p>
+        <h2>Arbeit am Gleis. Mit Plan dahinter.</h2>
+        <p>Wir wachsen und suchen Menschen, die Verantwortung im Gleisbereich übernehmen wollen. Einstieg ist ohne Vorkenntnisse möglich, die Einweisung übernehmen wir.</p>
+      </div>
+
+      <div class="jobs">
+        <div class="job reveal">
+          <span class="job-lvl">Einstieg</span>
+          <span class="job-name">Sicherungsposten</span>
+          <span class="job-note">Einweisung im Haus, Einsatz im Umkreis von Hamm.</span>
         </div>
-        <div>
-          <h3 style="margin-bottom:14px;font-size:1.05rem">Offene Positionen</h3>
-          <div class="jobs">
-            <div class="job"><span>Sicherungsposten</span><em>Einstieg</em></div>
-            <div class="job"><span>Bahnübergangsposten</span><em>Einstieg</em></div>
-            <div class="job"><span>Sicherungsaufsicht</span><em>mit Erfahrung</em></div>
-          </div>
+        <div class="job reveal">
+          <span class="job-lvl">Einstieg</span>
+          <span class="job-name">Bahnübergangsposten</span>
+          <span class="job-note">Arbeit an Bahnübergängen, Schichtbetrieb.</span>
+        </div>
+        <div class="job reveal">
+          <span class="job-lvl">Mit Erfahrung</span>
+          <span class="job-name">Sicherungsaufsicht</span>
+          <span class="job-note">Führung mehrerer Posten, Koordination vor Ort.</span>
         </div>
       </div>
 
-      <div class="career-cols">
-        <div>
-          <h3>Das sollten Sie mitbringen</h3>
-          <ul class="clean">
-            <li><strong>Körperliche Fitness.</strong> Die Arbeit ist überwiegend draußen und in Schutzkleidung.</li>
-            <li><strong>Zuverlässigkeit.</strong> Posten bedeutet, zur vereinbarten Zeit an der vereinbarten Stelle zu sein.</li>
-            <li><strong>Bereitschaft zu Schichtarbeit.</strong> Baustellen laufen oft in Sperrpausen, auch nachts und am Wochenende.</li>
-            <li><strong>Führerschein von Vorteil.</strong> Hilfreich für die Anfahrt zu wechselnden Einsatzorten.</li>
-            <li><strong>Deutsch in Wort und Schrift.</strong> Für Verständigung am Gleis und die Dokumentation.</li>
+      <div class="lists">
+        <div class="reveal">
+          <p class="list-h">Das sollten Sie mitbringen</p>
+          <ul class="check">
+            <li>Körperliche Fitness und sicheres Auftreten</li>
+            <li>Zuverlässigkeit und Pünktlichkeit</li>
+            <li>Bereitschaft zu Schicht- und Wochenendarbeit</li>
+            <li>Deutsch in Wort und Schrift</li>
+            <li>Führerschein von Vorteil</li>
           </ul>
         </div>
-        <div>
-          <h3>Das bieten wir</h3>
-          <ul class="clean">
-            <li><strong>Persönliche Einarbeitung.</strong> Sie werden begleitet, bevor Sie eigenständig am Gleis stehen.</li>
-            <li><strong>Festeinstellung.</strong> Wir suchen Kolleginnen und Kollegen langfristig, nicht für ein Projekt.</li>
-            <li><strong>Einsatz im Umkreis.</strong> Planbare Anfahrtszeiten rund um unseren Standort Hamm.</li>
-            <li><strong>Ein Team von 14.</strong> Kurze Wege, feste Ansprechpersonen, Entscheidungen ohne Umwege.</li>
+        <div class="reveal">
+          <p class="list-h">Das bieten wir</p>
+          <ul class="check">
+            <li>Persönliche Einarbeitung durch erfahrene Kräfte</li>
+            <li>Festeinstellung statt Aushilfe</li>
+            <li>Einsatz regional, keine wochenlange Abwesenheit</li>
+            <li>Festes Team mit kurzen Wegen zur Einsatzleitung</li>
+            <li>Bewerbung ohne Anschreiben, ein Anruf genügt</li>
           </ul>
-          <p class="muted" style="margin-top:18px;font-size:.92rem">Bewerbung per E-Mail an <a href="mailto:info@sectrax.de?subject=Bewerbung" style="color:var(--text)">info@sectrax.de</a> mit Betreff "Bewerbung". Ein Lebenslauf genügt für den Anfang.</p>
+          <a class="btn btn-primary" href="mailto:info@sectrax.de?subject=Bewerbung%20SECTRAX" style="margin-top:24px">Jetzt bewerben
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- KONTAKT -->
-  <section id="kontakt">
-    <div class="wrap contact-grid">
-      <div class="contact-info">
-        <p class="eyebrow">Kontakt</p>
-        <h2>Anfrage an SECTRAX.</h2>
-        <p>Ob Baustelle, Rahmenvereinbarung oder Bewerbung: schreiben Sie kurz, worum es geht. Wir melden uns zurück.</p>
-        <dl class="contact-block">
-          <dt>Adresse</dt>
-          <dd>SECTRAX GmbH<br>Nassauerstr. 33-35<br>59065 Hamm</dd>
-          <dt>E-Mail</dt>
-          <dd><a href="mailto:info@sectrax.de">info@sectrax.de</a></dd>
-        </dl>
-      </div>
+  <section class="sec-tight" id="kontakt" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="contact">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Anfrage an SECTRAX.</h2>
+          <p>Ob Sie Posten für eine Baustelle brauchen oder einsteigen wollen: ein Anruf klärt das Schnellste.</p>
 
-      <div>
-        <div class="form-note" role="note">
-          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="flex:none;margin-top:2px"><rect x="1" y="1" width="14" height="14" fill="none" stroke="#E8B33A" stroke-width="1.5"/><path d="M8 4v5" stroke="#E8B33A" stroke-width="1.8"/><rect x="7.1" y="10.8" width="1.8" height="1.8" fill="#E8B33A"/></svg>
-          <span><strong>Formular wird noch angebunden.</strong> Der Versand ist noch nicht aktiv. Bis dahin erreichen Sie uns direkt per <a href="mailto:info@sectrax.de" style="color:inherit;text-decoration:underline">info@sectrax.de</a>.</span>
+          <div class="address">
+            <div>
+              <p class="addr-h">Telefon</p>
+              <p class="addr-v"><a href="tel:+4915226798873">+49 1522 6798873</a></p>
+            </div>
+            <div>
+              <p class="addr-h">E-Mail</p>
+              <p class="addr-v"><a href="mailto:info@sectrax.de">info@sectrax.de</a></p>
+            </div>
+            <div>
+              <p class="addr-h">Anschrift</p>
+              <p class="addr-v">SECTRAX GmbH<br>Nassauerstr. 33-35<br>59065 Hamm</p>
+            </div>
+            <div>
+              <p class="addr-h">Geschäftsführung</p>
+              <p class="addr-v">Devran Akyüz</p>
+            </div>
+          </div>
         </div>
-        <form method="post" action="#" aria-label="Kontaktformular" novalidate>
-          <div class="row">
+
+        <form id="contactForm" novalidate class="reveal">
+          <p class="form-note">Der Formularversand ist noch nicht angebunden. Bis dahin erreichen Sie uns direkt per Telefon oder E-Mail.</p>
+
+          <div class="field">
+            <label for="f-name">Name <span class="req">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="row2">
             <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required aria-required="true">
+              <label for="f-mail">E-Mail <span class="req">*</span></label>
+              <input id="f-mail" name="email" type="email" autocomplete="email" required>
             </div>
             <div class="field">
-              <label for="email">E-Mail</label>
-              <input id="email" name="email" type="email" autocomplete="email" required aria-required="true">
+              <label for="f-tel">Telefon</label>
+              <input id="f-tel" name="phone" type="tel" autocomplete="tel">
             </div>
           </div>
           <div class="field">
-            <label for="phone">Telefon <span class="opt">(optional)</span></label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel">
+            <label for="f-msg">Nachricht <span class="req">*</span></label>
+            <textarea id="f-msg" name="message" required></textarea>
           </div>
-          <div class="field">
-            <label for="message">Nachricht</label>
-            <textarea id="message" name="message" required aria-required="true"></textarea>
-          </div>
-          <div class="field field-check">
-            <label for="privacy" class="check-label">
-              <input id="privacy" name="privacy" type="checkbox" required>
-              <span>Ich habe die <a href="#datenschutz">Hinweise zum Datenschutz</a> gelesen.</span>
-            </label>
-          </div>
+          <label class="consent" for="f-ok">
+            <input id="f-ok" name="consent" type="checkbox" required>
+            <span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden. Hinweise im <a href="#datenschutz">Datenschutz</a>.</span>
+          </label>
           <button class="btn btn-primary" type="submit">Anfrage senden</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="foot-top">
+    <div class="foot-grid">
       <div>
-        <div class="foot-brand">SECTRAX</div>
-        <address>
-          SECTRAX GmbH<br>
-          Nassauerstr. 33-35<br>
-          59065 Hamm<br>
-          <a href="mailto:info@sectrax.de">info@sectrax.de</a>
-        </address>
+        <div class="foot-brand">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 7 L25 25 M25 7 L7 25"/></svg>
+          SECTRAX
+        </div>
+        <p class="foot-p">Sicherungsunternehmen für Gleisbaustellen. Sicherungsposten, Sicherungsaufsicht, Bahnübergangsposten und Bahneinsatzleiter aus Hamm.</p>
       </div>
-      <nav class="foot-links" aria-label="Weitere Links">
-        <a href="#impressum">Impressum</a>
-        <a href="#datenschutz">Datenschutz</a>
-        <a href="#karriere">Karriere</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
+      <div>
+        <p class="foot-h">Kontakt</p>
+        <div class="foot-links">
+          <a href="tel:+4915226798873">+49 1522 6798873</a>
+          <a href="mailto:info@sectrax.de">info@sectrax.de</a>
+          <a href="#kontakt">Nassauerstr. 33-35, 59065 Hamm</a>
+        </div>
+      </div>
+      <div>
+        <p class="foot-h">Seite</p>
+        <div class="foot-links">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#auftraggeber">Für Auftraggeber</a>
+          <a href="#karriere">Karriere</a>
+          <a href="#impressum">Impressum</a>
+          <a href="#datenschutz">Datenschutz</a>
+        </div>
+      </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; 2026 SECTRAX GmbH. Alle Rechte vorbehalten.</span>
-      <span>Gleissicherung. Standort Hamm.</span>
-    </div>
-  </div>
-
-  <div class="wrap">
-    <div class="legal" id="impressum">
-      <h2>Impressum</h2>
-      <div class="legal-grid">
-        <div>
-          <h3>Angaben gemäß § 5 DDG</h3>
-          <p>SECTRAX GmbH<br>Nassauerstr. 33-35<br>59065 Hamm<br>Deutschland</p>
-          <h3>Vertreten durch</h3>
-          <p><span class="ph">[Geschäftsführer eintragen]</span></p>
-          <h3>Kontakt</h3>
-          <p>E-Mail: <a href="mailto:info@sectrax.de" style="color:var(--text)">info@sectrax.de</a><br>Telefon: <span class="ph">[Telefonnummer eintragen]</span></p>
-        </div>
-        <div>
-          <h3>Registereintrag</h3>
-          <p>Handelsregister: <span class="ph">[Registergericht eintragen]</span><br>Registernummer: <span class="ph">[HRB eintragen]</span></p>
-          <h3>Umsatzsteuer</h3>
-          <p>USt-IdNr. gemäß § 27a UStG: <span class="ph">[USt-IdNr. eintragen]</span></p>
-          <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
-          <p><span class="ph">[Name und Anschrift eintragen]</span></p>
-        </div>
-      </div>
-      <p class="ph-note"><strong>Hinweis zum Entwurf.</strong> Die Angaben in eckigen Klammern sind Platzhalter und müssen vor der Veröffentlichung durch die tatsächlichen Daten der SECTRAX GmbH ersetzt werden.</p>
-    </div>
-
-    <div class="legal" id="datenschutz">
-      <h2>Datenschutz</h2>
-      <p style="margin-top:18px;max-width:70ch">Diese Seite verwendet keine Tracking- oder Analyse-Dienste und lädt keine externen Schriften oder Bilder. Beim Aufruf über das Kontaktformular werden keine Daten übertragen, solange der Versand nicht freigeschaltet ist.</p>
-      <p style="max-width:70ch">Die vollständige Datenschutzerklärung wird ergänzt. Anfragen zum Datenschutz richten Sie bitte an <a href="mailto:info@sectrax.de" style="color:var(--text)">info@sectrax.de</a>.</p>
+      <span>© 2026 SECTRAX GmbH</span>
+      <span>Entwurf, keine Veröffentlichung</span>
     </div>
   </div>
 </footer>
 
+<section class="legal" id="impressum">
+  <div class="wrap">
+    <h2>Impressum</h2>
+    <div class="legal-grid">
+      <div>
+        <h3>Angaben gemäß § 5 DDG</h3>
+        <p>SECTRAX GmbH<br>Nassauerstr. 33-35<br>59065 Hamm<br>Deutschland</p>
+        <h3>Vertreten durch</h3>
+        <p>Devran Akyüz</p>
+        <h3>Kontakt</h3>
+        <p>Telefon: <a href="tel:+4915226798873" style="color:var(--text)">+49 1522 6798873</a><br>E-Mail: <a href="mailto:info@sectrax.de" style="color:var(--text)">info@sectrax.de</a></p>
+      </div>
+      <div>
+        <h3>Registereintrag</h3>
+        <p>Handelsregister: <span class="ph">[Registergericht eintragen]</span><br>Registernummer: <span class="ph">[HRB eintragen]</span></p>
+        <h3>Umsatzsteuer</h3>
+        <p>USt-IdNr. gemäß § 27a UStG: <span class="ph">[USt-IdNr. eintragen]</span></p>
+        <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+        <p>Devran Akyüz, Anschrift wie oben</p>
+      </div>
+    </div>
+    <p class="draft-note">Entwurf. Die eckig geklammerten Angaben müssen vor einer Veröffentlichung durch die tatsächlichen Registerdaten ersetzt werden.</p>
+  </div>
+</section>
+
+<section class="legal" id="datenschutz">
+  <div class="wrap">
+    <h2>Datenschutz</h2>
+    <div class="legal-grid">
+      <div>
+        <h3>Verantwortlich</h3>
+        <p>SECTRAX GmbH, Nassauerstr. 33-35, 59065 Hamm<br>E-Mail: <a href="mailto:info@sectrax.de" style="color:var(--text)">info@sectrax.de</a></p>
+        <h3>Hosting</h3>
+        <p>Diese Seite wird bei GitHub Inc. gehostet. Beim Aufruf werden technisch notwendige Verbindungsdaten wie IP-Adresse und Zeitpunkt verarbeitet.</p>
+      </div>
+      <div>
+        <h3>Keine Analyse, keine Cookies</h3>
+        <p>Diese Seite verwendet keine Tracking- oder Analyse-Dienste, setzt keine Cookies und lädt keine externen Schriften oder Bilder.</p>
+        <h3>Kontaktformular</h3>
+        <p>Das Formular versendet derzeit keine Daten. Angaben, die Sie eintragen, verlassen Ihren Browser nicht.</p>
+      </div>
+    </div>
+    <p class="draft-note">Entwurf. Eine vollständige Datenschutzerklärung muss vor einer Veröffentlichung ergänzt werden.</p>
+  </div>
+</section>
+
 <script>
-  /* Formular hat noch kein Backend. Absenden wird abgefangen und deutlich erklärt. */
-  (function(){
-    var form=document.querySelector('form[aria-label="Kontaktformular"]');
-    if(!form) return;
-    var status=form.querySelector('.form-status');
-    var required=['name','email','message','privacy'];
-    form.addEventListener('submit',function(e){
-      e.preventDefault();
-      var missing=required.filter(function(id){return !document.getElementById(id).checkValidity();});
-      if(missing.length){
-        status.textContent='Bitte füllen Sie die markierten Felder aus.';
-        var first=document.getElementById(missing[0]);
-        first.focus();
-        first.reportValidity();
-        return;
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var nav = document.getElementById("nav");
+  var lastY = -1;
+  function navTick(){
+    var y = window.pageYOffset || 0;
+    if (y !== lastY){ nav.classList.toggle("scrolled", y > 24); lastY = y; }
+  }
+
+  var hero = document.getElementById("hero");
+  var heroMedia = document.getElementById("heroMedia");
+  var band = document.querySelector(".band");
+  var bandMedia = document.getElementById("bandMedia");
+  var queued = false;
+
+  function parallax(){
+    if (!reduce){
+      var vh = window.innerHeight;
+      if (heroMedia && hero){
+        var r = hero.getBoundingClientRect();
+        if (r.bottom > 0){
+          var p = Math.min(1, Math.max(0, (0 - r.top) / (r.height || 1)));
+          heroMedia.style.transform = "translate3d(0," + (p * r.height * 0.16).toFixed(2) + "px,0)";
+        }
       }
-      status.innerHTML='Diese Anfrage wurde nicht versendet. Das Formular wird noch angebunden. Bitte schreiben Sie direkt an <a href="mailto:info@sectrax.de" style="color:inherit;text-decoration:underline">info@sectrax.de</a>.';
+      if (bandMedia && band){
+        var br = band.getBoundingClientRect();
+        if (br.top < vh && br.bottom > 0){
+          var bp = (vh - br.top) / (vh + br.height);
+          var shift = (bp - 0.5) * br.height * 0.20;
+          bandMedia.style.transform = "translate3d(0," + shift.toFixed(2) + "px,0)";
+        }
+      }
+    }
+    queued = false;
+  }
+
+  function onScroll(){
+    navTick();
+    if (!queued){ queued = true; window.requestAnimationFrame(parallax); }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  navTick(); parallax();
+
+  var items = document.querySelectorAll(".reveal");
+  if (!reduce && "IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+    items.forEach(function(el, i){
+      el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + "ms";
+      io.observe(el);
     });
-    form.addEventListener('input',function(){ status.textContent=''; });
-  })();
+  } else {
+    items.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  var form = document.getElementById("contactForm");
+  var status = form.querySelector(".form-status");
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var name = form.querySelector("#f-name");
+    var mail = form.querySelector("#f-mail");
+    var msg = form.querySelector("#f-msg");
+    var ok = form.querySelector("#f-ok");
+    if (!name.value.trim()){ status.textContent = "Bitte tragen Sie Ihren Namen ein."; name.focus(); return; }
+    if (!mail.value.trim() || mail.value.indexOf("@") < 1){ status.textContent = "Bitte tragen Sie eine gültige E-Mail-Adresse ein."; mail.focus(); return; }
+    if (!msg.value.trim()){ status.textContent = "Bitte schreiben Sie eine kurze Nachricht."; msg.focus(); return; }
+    if (!ok.checked){ status.textContent = "Bitte bestätigen Sie den Hinweis zum Datenschutz."; ok.focus(); return; }
+    status.textContent = "Der Versand ist noch nicht freigeschaltet. Bitte schreiben Sie direkt an info@sectrax.de oder rufen Sie an.";
+  });
+})();
 </script>
 </body>
 </html>
