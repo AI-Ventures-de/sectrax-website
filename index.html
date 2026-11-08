@@ -134,8 +134,9 @@ section{position:relative}
 .sec-head p{margin-top:16px;color:var(--muted);max-width:52ch}
 
 .svc-list{display:grid;gap:0;border-top:1px solid var(--line)}
-.svc{display:grid;gap:8px;grid-template-columns:1fr;padding:26px 0;border-bottom:1px solid var(--line);transition:background .25s var(--ease)}
-.svc:hover{background:rgba(16,18,21,.028)}
+.svc{display:grid;gap:8px;grid-template-columns:1fr;padding:26px 0;border-bottom:1px solid var(--line);
+  transition:background .25s var(--ease);align-items:start}
+.svc:hover{background:rgba(16,18,21,.022)}
 .svc-key{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .svc-abbr{font-size:clamp(1.5rem,5.4vw,2.1rem);font-weight:800;letter-spacing:-.02em;color:var(--accent-ink);line-height:1}
 .svc-name{font-size:1.02rem;font-weight:700}
@@ -143,9 +144,8 @@ section{position:relative}
 .svc .muted{color:var(--muted-2);font-size:.88rem}
 .svc-note{margin-top:26px;color:var(--muted-2);font-size:.87rem;max-width:66ch}
 @media (min-width:820px){
-  .svc{grid-template-columns:minmax(0,.92fr) minmax(0,1.5fr);gap:34px;padding:34px 20px 34px 0}
-  .svc-key{flex-direction:column;gap:6px;align-items:flex-start}
-  .svc:nth-child(odd){padding-left:20px}
+  .svc{grid-template-columns:minmax(0,.78fr) minmax(0,1.62fr);gap:44px;padding:34px 0;align-items:start}
+  .svc-key{flex-direction:column;gap:7px;align-items:flex-start}
 }
 
 .band{position:relative;min-height:clamp(340px,56vh,560px);display:flex;align-items:center;overflow:hidden;background:#16191c}
