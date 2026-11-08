@@ -36,7 +36,7 @@
 :root{
   --bg:#ffffff; --bg-2:#f5f6f8; --bg-3:#eceef1;
   --line:rgba(16,18,21,.13); --line-soft:rgba(16,18,21,.075);
-  --text:#1a1d21; --muted:#565d65; --muted-2:#767d85;
+  --text:#1a1d21; --muted:#4a5158; --muted-2:#5f666d;
   --accent:#E8B33A; --accent-ink:#8a6410; --accent-dim:#c2942c;
   --ink:#1a1d21;
   --radius:3px; --wrap:1240px; --pad:clamp(20px,5vw,48px);
@@ -94,19 +94,22 @@ p{margin:0}
 .hero-media picture{display:block;width:100%;height:100%}
 .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 44%}
 .hero-scrim{position:absolute;inset:0;z-index:1;
-  background:linear-gradient(to top,rgba(12,14,16,.90) 0%,rgba(12,14,16,.66) 40%,rgba(12,14,16,.30) 72%,rgba(12,14,21,.52) 100%),
-             linear-gradient(to right,rgba(12,14,16,.92) 0%,rgba(12,14,16,.38) 58%,rgba(12,14,16,.02) 90%)}
+  background:linear-gradient(to top,rgba(9,11,13,.96) 0%,rgba(9,11,13,.76) 34%,rgba(9,11,13,.34) 68%,rgba(9,11,13,.62) 100%),
+             linear-gradient(to right,rgba(9,11,13,.97) 0%,rgba(9,11,13,.80) 34%,rgba(9,11,13,.30) 66%,rgba(9,11,13,.04) 92%)}
 .hero-inner{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad) clamp(38px,7vw,78px)}
-.hero h1{max-width:19ch;font-size:clamp(2rem,8.6vw,4.5rem);color:#ffffff;text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.hero h1{max-width:19ch;font-size:clamp(2rem,8.6vw,4.5rem);color:#ffffff;
+  text-shadow:0 1px 2px rgba(0,0,0,.55),0 4px 26px rgba(0,0,0,.40)}
 .hero h1 em{font-style:normal;color:var(--accent)}
-.hero-sub{margin-top:20px;max-width:44ch;font-size:clamp(1rem,2.5vw,1.15rem);color:#e2e6ea;line-height:1.56}
+.hero-sub{margin-top:20px;max-width:44ch;font-size:clamp(1rem,2.5vw,1.15rem);color:#eef1f4;line-height:1.56;
+  text-shadow:0 1px 2px rgba(0,0,0,.6),0 2px 14px rgba(0,0,0,.45)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .hero-call{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:clamp(1.05rem,3.2vw,1.34rem);letter-spacing:.005em;color:#ffffff;margin-top:26px;transition:color .2s}
 .hero-call svg{width:21px;height:21px;stroke:var(--accent);fill:none;stroke-width:2.2;flex:0 0 auto}
 .hero-call:hover{color:var(--accent)}
 .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
-.tag{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#e6eaee;
-  padding:7px 12px;border:1px solid rgba(255,255,255,.28);border-radius:var(--radius);background:rgba(255,255,255,.10)}
+.tag{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#ffffff;
+  padding:7px 12px;border:1px solid rgba(255,255,255,.36);border-radius:var(--radius);background:rgba(0,0,0,.28);
+  backdrop-filter:blur(6px);text-shadow:0 1px 2px rgba(0,0,0,.5)}
 .hero-edge{position:absolute;left:0;right:0;bottom:0;height:1px;z-index:3;
   background:linear-gradient(to right,transparent,rgba(232,179,58,.55),transparent)}
 @media (min-width:768px){.hero{align-items:center;padding:120px 0 74px;min-height:min(88svh,820px)}.hero-inner{padding-bottom:0}.hero h1 em{display:block}}
@@ -149,10 +152,10 @@ section{position:relative}
 .band-media{position:absolute;inset:-14% 0;z-index:0;will-change:transform}
 .band-media img{width:100%;height:100%;object-fit:cover}
 .band::after{content:"";position:absolute;inset:0;z-index:1;
-  background:linear-gradient(to right,rgba(12,14,16,.90) 0%,rgba(12,14,16,.62) 50%,rgba(12,14,16,.26) 100%)}
+  background:linear-gradient(to right,rgba(9,11,13,.96) 0%,rgba(9,11,13,.84) 40%,rgba(9,11,13,.38) 78%,rgba(9,11,13,.10) 100%)}
 .band-inner{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:clamp(46px,8vw,72px) var(--pad)}
-.band h2{max-width:20ch}
-.band p{margin-top:16px;color:#c6cbd0;max-width:46ch}
+.band h2{max-width:20ch;color:#ffffff;text-shadow:0 1px 2px rgba(0,0,0,.55),0 4px 22px rgba(0,0,0,.40)}
+.band p{margin-top:16px;color:#e2e6ea;max-width:46ch;text-shadow:0 1px 2px rgba(0,0,0,.55),0 2px 14px rgba(0,0,0,.4)}
 
 .points{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .point{background:#ffffff;padding:26px 22px;transition:background .25s}
@@ -213,12 +216,21 @@ footer{border-top:1px solid var(--line);padding:clamp(42px,7vw,66px) 0 26px;back
 .foot-bottom{margin-top:42px;padding-top:20px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:10px;
   justify-content:space-between;font-size:.82rem;color:#71777e}
 
-.legal{border-top:1px solid var(--line-soft);background:var(--bg-2);padding:clamp(46px,7vw,74px) 0}
-.legal h2{font-size:clamp(1.28rem,3vw,1.6rem)}
-.legal-grid{display:grid;gap:clamp(26px,4vw,50px);margin-top:26px}
-@media (min-width:760px){.legal-grid{grid-template-columns:1fr 1fr}}
-.legal h3{font-size:.94rem;margin:22px 0 7px;color:#1a1d21}
-.legal h3:first-child{margin-top:0}
+.legal{border-top:1px solid var(--line);background:var(--bg-2);padding:clamp(46px,7vw,74px) 0}
+.legal-box{display:grid;gap:0;margin-top:24px;background:#ffffff;
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 1px 2px rgba(16,18,21,.04)}
+@media (min-width:880px){.legal-box{grid-template-columns:1fr 1fr}}
+.legal-col{padding:clamp(24px,3.6vw,42px)}
+.legal-col + .legal-col{border-top:1px solid var(--line)}
+@media (min-width:880px){
+  .legal-col + .legal-col{border-top:0;border-left:1px solid var(--line)}
+}
+.legal-col h2{font-size:clamp(1.18rem,2.4vw,1.42rem);margin-bottom:6px}
+.legal-col p a{color:var(--accent-ink);border-bottom:1px solid rgba(138,100,16,.3)}
+.legal-col p a:hover{color:#1a1d21;border-color:#1a1d21}
+.legal h3{font-size:.92rem;margin:20px 0 6px;color:#1a1d21;letter-spacing:.005em}
+.legal-col h2 + h3{margin-top:18px}
 .legal p{color:var(--muted);font-size:.92rem;line-height:1.7;margin-bottom:9px;max-width:70ch}
 .ph{color:var(--accent-ink);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;white-space:nowrap}
 .draft-note{margin-top:26px;padding:14px 16px;border:1px solid rgba(138,100,16,.30);border-radius:var(--radius);
@@ -491,7 +503,7 @@ footer{border-top:1px solid var(--line);padding:clamp(42px,7vw,66px) 0 26px;back
         </div>
 
         <form id="contactForm" novalidate class="reveal">
-          <p class="form-note">Der Formularversand ist noch nicht angebunden. Bis dahin erreichen Sie uns direkt per Telefon oder E-Mail.</p>
+          <p class="form-note">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht. Alternativ erreichen Sie uns direkt per Telefon.</p>
 
           <div class="field">
             <label for="f-name">Name <span class="req">*</span></label>
@@ -555,54 +567,66 @@ footer{border-top:1px solid var(--line);padding:clamp(42px,7vw,66px) 0 26px;back
     </div>
     <div class="foot-bottom">
       <span>© 2026 SECTRAX GmbH</span>
-      <span>Entwurf, keine Veröffentlichung</span>
+      <span>Sicherungsunternehmen aus Hamm</span>
     </div>
   </div>
 </footer>
 
-<section class="legal" id="impressum">
+<section class="legal" id="rechtliches">
   <div class="wrap">
-    <h2>Impressum</h2>
-    <div class="legal-grid">
-      <div>
+    <p class="eyebrow">Rechtliches</p>
+    <div class="legal-box">
+
+      <article class="legal-col" id="impressum">
+        <h2>Impressum</h2>
         <h3>Angaben gemäß § 5 DDG</h3>
         <p>SECTRAX GmbH<br>Nassauerstr. 33-35<br>59065 Hamm<br>Deutschland</p>
-        <h3>Vertreten durch</h3>
-        <p>Devran Akyüz</p>
-        <h3>Kontakt</h3>
-        <p>Telefon: <a href="tel:+4915226798873" style="color:var(--text)">+49 1522 6798873</a><br>E-Mail: <a href="mailto:info@sectrax.de" style="color:var(--text)">info@sectrax.de</a></p>
-      </div>
-      <div>
-        <h3>Registereintrag</h3>
-        <p>Handelsregister: <span class="ph">[Registergericht eintragen]</span><br>Registernummer: <span class="ph">[HRB eintragen]</span></p>
-        <h3>Umsatzsteuer</h3>
-        <p>USt-IdNr. gemäß § 27a UStG: <span class="ph">[USt-IdNr. eintragen]</span></p>
-        <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
-        <p>Devran Akyüz, Anschrift wie oben</p>
-      </div>
-    </div>
-    <p class="draft-note">Entwurf. Die eckig geklammerten Angaben müssen vor einer Veröffentlichung durch die tatsächlichen Registerdaten ersetzt werden.</p>
-  </div>
-</section>
 
-<section class="legal" id="datenschutz">
-  <div class="wrap">
-    <h2>Datenschutz</h2>
-    <div class="legal-grid">
-      <div>
-        <h3>Verantwortlich</h3>
-        <p>SECTRAX GmbH, Nassauerstr. 33-35, 59065 Hamm<br>E-Mail: <a href="mailto:info@sectrax.de" style="color:var(--text)">info@sectrax.de</a></p>
+        <h3>Vertreten durch</h3>
+        <p>Devran Akyüz, Geschäftsführer</p>
+
+        <h3>Kontakt</h3>
+        <p>Telefon: <a href="tel:+4915226798873">+49 1522 6798873</a><br>
+        E-Mail: <a href="mailto:info@sectrax.de">info@sectrax.de</a></p>
+
+        <h3>Registereintrag</h3>
+        <p>Handelsregister: <span class="ph">[Registergericht]</span><br>
+        Registernummer: <span class="ph">[HRB]</span></p>
+
+        <h3>Umsatzsteuer-Identifikationsnummer</h3>
+        <p>USt-IdNr. gemäß § 27a UStG: <span class="ph">[USt-IdNr.]</span></p>
+
+        <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+        <p>Devran Akyüz<br>Nassauerstr. 33-35, 59065 Hamm</p>
+      </article>
+
+      <article class="legal-col" id="datenschutz">
+        <h2>Datenschutz</h2>
+
+        <h3>Verantwortlicher</h3>
+        <p>SECTRAX GmbH<br>Nassauerstr. 33-35, 59065 Hamm<br>
+        E-Mail: <a href="mailto:info@sectrax.de">info@sectrax.de</a></p>
+
         <h3>Hosting</h3>
-        <p>Diese Seite wird bei GitHub Inc. gehostet. Beim Aufruf werden technisch notwendige Verbindungsdaten wie IP-Adresse und Zeitpunkt verarbeitet.</p>
-      </div>
-      <div>
-        <h3>Keine Analyse, keine Cookies</h3>
-        <p>Diese Seite verwendet keine Tracking- oder Analyse-Dienste, setzt keine Cookies und lädt keine externen Schriften oder Bilder.</p>
-        <h3>Kontaktformular</h3>
-        <p>Das Formular versendet derzeit keine Daten. Angaben, die Sie eintragen, verlassen Ihren Browser nicht.</p>
-      </div>
+        <p>Diese Website wird bei der GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA gehostet. Beim Aufruf der Seite werden vom Hoster technisch notwendige Verbindungsdaten verarbeitet: IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Datei, übertragene Datenmenge, Browsertyp und Betriebssystem. Diese Verarbeitung ist zur Auslieferung der Website erforderlich (Art. 6 Abs. 1 lit. f DSGVO). Mit dem Anbieter besteht ein Vertrag zur Auftragsverarbeitung.</p>
+
+        <h3>Cookies und Analyse</h3>
+        <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Es werden keine Profile gebildet.</p>
+
+        <h3>Schriften und Bilder</h3>
+        <p>Es werden ausschließlich Systemschriften verwendet. Es werden keine Schriften von externen Servern geladen. Alle Bilder werden von dieser Website selbst ausgeliefert.</p>
+
+        <h3>Kontaktaufnahme</h3>
+        <p>Wenn Sie uns per E-Mail, Telefon oder über das Kontaktformular kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Angaben zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen (Art. 6 Abs. 1 lit. b DSGVO). Das Kontaktformular öffnet Ihr E-Mail-Programm. Die Eingaben werden dabei nicht an einen Server dieser Website übertragen, sondern erst mit dem Versand Ihrer E-Mail.</p>
+
+        <h3>Ihre Rechte</h3>
+        <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie ein Widerspruchsrecht (Art. 21 DSGVO). Wenden Sie sich dafür an die oben genannte Adresse.</p>
+
+        <h3>Beschwerderecht</h3>
+        <p>Sie können sich bei einer Datenschutz-Aufsichtsbehörde beschweren. Zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2-4, 40213 Düsseldorf.</p>
+      </article>
+
     </div>
-    <p class="draft-note">Entwurf. Eine vollständige Datenschutzerklärung muss vor einer Veröffentlichung ergänzt werden.</p>
   </div>
 </section>
 
@@ -689,7 +713,17 @@ footer{border-top:1px solid var(--line);padding:clamp(42px,7vw,66px) 0 26px;back
     if (!mail.value.trim() || mail.value.indexOf("@") < 1){ status.textContent = "Bitte tragen Sie eine gültige E-Mail-Adresse ein."; mail.focus(); return; }
     if (!msg.value.trim()){ status.textContent = "Bitte schreiben Sie eine kurze Nachricht."; msg.focus(); return; }
     if (!ok.checked){ status.textContent = "Bitte bestätigen Sie den Hinweis zum Datenschutz."; ok.focus(); return; }
-    status.textContent = "Der Versand ist noch nicht freigeschaltet. Bitte schreiben Sie direkt an info@sectrax.de oder rufen Sie an.";
+
+    var tel = form.querySelector("#f-tel");
+    var subject = "Anfrage über sectrax.de";
+    var body = "Name: " + name.value.trim()
+             + "\nE-Mail: " + mail.value.trim()
+             + (tel.value.trim() ? "\nTelefon: " + tel.value.trim() : "")
+             + "\n\n" + msg.value.trim();
+    var href = "mailto:info@sectrax.de?subject=" + encodeURIComponent(subject)
+             + "&body=" + encodeURIComponent(body);
+    status.textContent = "Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht.";
+    window.location.href = href;
   });
 })();
 </script>
